@@ -26,6 +26,19 @@ Exactly one per post. The set is fixed at five; do not invent new ones.
 | `study` | Short learning-in-public notes | Either |
 | `log` | Personal writing | Korean |
 
+## Strategic roles (Hero–Hub–Help)
+
+Priority is steady quality over marketing. Each category has a role;
+know which one a draft is playing before writing it.
+
+- **Hub** — `quant` monthly retro. The heartbeat. Ships every month,
+  no exceptions. Regularity beats brilliance.
+- **Help** — `study`. Search-facing evergreen. One concrete problem,
+  one concrete resolution; specificity is what ranks.
+- **Hero** — `agent` essays. Never planned, never forced. Written when
+  something real has accumulated; 2–3 a year is plenty.
+- **Trust** — `retro`, `log`. Make the author a person, not a feed.
+
 ## Voice
 
 - First person, plain sentences, no hype. Claims come with evidence:
