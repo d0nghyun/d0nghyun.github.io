@@ -22,7 +22,7 @@ ShowToc = true
 
   [params.homeInfoParams]
   Title = 'Donghyun Lee'
-  Content = 'Quant → financial data platform. Writing about agent engineering, quant research, and how I run my work on axioms. 한국어/English.'
+  Content = 'Writing about agent engineering, quant research, and how I run my work on axioms. 한국어/English.'
 
   [[params.socialIcons]]
   name = 'github'
