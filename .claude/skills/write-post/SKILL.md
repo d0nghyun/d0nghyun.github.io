@@ -72,12 +72,22 @@ post theirs. Agent's role afterward:
 - Boundary check per WRITING.md: no employer internals, no
   returns/positions/alpha, generalize company specifics
 
-## 5. Publish (explicit approval only)
+## 5. Counterpart language version
+
+Every post ships in both languages (WRITING.md § Languages). Once the
+author has settled the original, draft the counterpart: a rewrite in
+the target language's register, carrying the author's frame and
+specifics — not a literal translation. Same base filename (`.md` for
+English, `.ko.md` for Korean). The author reviews both before
+publish.
+
+## 6. Publish (explicit approval only)
 
 On the author's explicit go ("발행해"):
 
-1. Set `date` to the current timestamp (guards the future-date trap)
-2. `draft: false`, commit, push
-3. Watch the Actions run, then verify the live URL renders
+1. Set `date` to the current timestamp on both language files (guards
+   the future-date trap)
+2. `draft: false` on both, commit, push — the pair goes live together
+3. Watch the Actions run, then verify both live URLs render
 4. Offer a LinkedIn routing hook: 1–2 sentences of the question the
    post answers + one claim + link. The author posts it themselves.

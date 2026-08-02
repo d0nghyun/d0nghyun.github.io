@@ -23,18 +23,19 @@ under `/ko/`. Same base filename links translations:
 - English (default): `content/posts/YYYY-MM-DD-slug.md`
 - Korean: `content/posts/YYYY-MM-DD-slug.ko.md`
 
-A post may exist in one language only — it then appears only in that
-language's feed. Originals follow the category table below; add a
-translation when the post is worth the second audience, not by
-default. Translations are real rewrites in the target language's
-register, not literal translation.
+**Every post ships in both languages — no exceptions.** The original
+is written in the category's language (table below); the counterpart
+is drafted by the agent as a rewrite in the target language's
+register — never a literal translation — and is approved together
+with the original before publishing. Both files share one base
+filename and go live in the same push.
 
 ## Categories
 
 Exactly one per post. The set is fixed at five; do not invent new ones.
 
-| Category | What | Language |
-|----------|------|----------|
+| Category | What | Original language |
+|----------|------|-------------------|
 | `retro` | Career retrospectives | Korean |
 | `quant` | Monthly agent-facing trading retrospectives, research notes | English |
 | `agent` | Agent engineering: axioms, hooks, harnesses | English |
