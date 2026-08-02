@@ -7,6 +7,7 @@ push to main.
 
 | Task | Read |
 |------|------|
+| Writing a new post end-to-end | `.claude/skills/write-post/` — the process |
 | Writing or editing a post | `WRITING.md` — the writing contract. Binding. |
 | Habits of thought | `THINKING.md` |
 
