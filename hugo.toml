@@ -34,22 +34,9 @@ ShowCodeCopyButtons = true
 ShowRssButtonInSectionTermList = true
 ShowToc = true
 
-  [params.profileMode]
-  enabled = true
-  title = 'Donghyun Lee'
-  subtitle = 'Writing about agent engineering, quant research, and how I run my work on axioms. 한국어/English.'
-  imageUrl = '/images/avatar.png'
-  imageWidth = 130
-  imageHeight = 130
-  imageTitle = 'Donghyun Lee'
-
-    [[params.profileMode.buttons]]
-    name = 'Posts'
-    url = '/posts/'
-
-    [[params.profileMode.buttons]]
-    name = 'About'
-    url = '/about/'
+  [params.homeInfoParams]
+  Title = 'Donghyun Lee'
+  Content = 'Writing about agent engineering, quant research, and how I run my work on axioms. 한국어/English.'
 
   [[params.socialIcons]]
   name = 'github'
