@@ -1,5 +1,5 @@
 ---
-title: "상방을 팔았다"
+title: "이직 회고"
 date: 2026-08-02T14:00:00+09:00
 categories: ["retro"]
 tags: ["career", "이직"]
