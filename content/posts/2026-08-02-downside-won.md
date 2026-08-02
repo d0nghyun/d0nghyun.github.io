@@ -2,7 +2,7 @@
 title: "[2026-07] 이직 회고"
 date: 2026-08-02T15:17:00+09:00
 categories: ["retro"]
-tags: ["career", "이직"]
+tags: ["career", "job-change"]
 draft: false
 ---
 

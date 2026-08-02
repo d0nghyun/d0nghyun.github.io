@@ -10,7 +10,8 @@ the contract that makes the output consistent.
 - Posts live in `content/posts/YYYY-MM-DD-kebab-case.md`. The filename
   date is identity; it never changes after publication.
 - Frontmatter: `title`, `date` (ISO 8601 with +09:00), `categories`
-  (exactly one), `tags` (free), `draft`.
+  (exactly one), `tags` (free, but always English lowercase
+  kebab-case — even on Korean posts), `draft`.
 - `date` must not be in the future at deploy time — Hugo silently
   excludes future-dated posts. (Learned the hard way on day one.)
 
