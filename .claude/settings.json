@@ -1,0 +1,45 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/reset-scope-count.sh"
+          },
+          {
+            "type": "command",
+            "command": ".claude/hooks/inject-diagnosis-invariant.sh"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/scope-guard.sh"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/enforce-doc-line-cap.sh"
+          },
+          {
+            "type": "command",
+            "command": ".claude/hooks/lint-silent-fallback.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
