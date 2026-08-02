@@ -23,4 +23,4 @@ Everything here is archived as markdown first; LinkedIn posts are just
 routing.
 
 - GitHub: [d0nghyun](https://github.com/d0nghyun)
-- LinkedIn: [d0nghyun](https://www.linkedin.com/in/d0nghyun)
+- LinkedIn: [movinghyun](https://www.linkedin.com/in/movinghyun/)
