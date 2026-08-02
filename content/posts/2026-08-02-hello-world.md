@@ -1,6 +1,7 @@
 ---
 title: "Hello, world"
 date: 2026-08-02T09:00:00+09:00
+categories: ["philosophy"]
 tags: ["meta"]
 draft: false
 ---
