@@ -4,6 +4,20 @@ title = 'Donghyun Lee'
 theme = 'PaperMod'
 enableRobotsTXT = true
 hasCJKLanguage = true
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = false
+
+[languages]
+
+  [languages.en]
+  languageName = 'English'
+  languageCode = 'en-us'
+  weight = 1
+
+  [languages.ko]
+  languageName = '한국어'
+  languageCode = 'ko'
+  weight = 2
 
 [pagination]
 pagerSize = 10

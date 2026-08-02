@@ -15,6 +15,20 @@ the contract that makes the output consistent.
 - `date` must not be in the future at deploy time — Hugo silently
   excludes future-dated posts. (Learned the hard way on day one.)
 
+## Languages
+
+The site is bilingual: English at the root (`/posts/...`), Korean
+under `/ko/`. Same base filename links translations:
+
+- English (default): `content/posts/YYYY-MM-DD-slug.md`
+- Korean: `content/posts/YYYY-MM-DD-slug.ko.md`
+
+A post may exist in one language only — it then appears only in that
+language's feed. Originals follow the category table below; add a
+translation when the post is worth the second audience, not by
+default. Translations are real rewrites in the target language's
+register, not literal translation.
+
 ## Categories
 
 Exactly one per post. The set is fixed at five; do not invent new ones.
