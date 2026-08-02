@@ -21,4 +21,10 @@ Five threads to expect:
 5. **log** — personal writing
 
 The repo that generates this site was scaffolded and deployed by an
-agent, which is on-brand.
+agent, which is on-brand. It goes further than scaffolding: the writing
+rules for this blog are themselves written *for* the agent, not for me —
+[`WRITING.md`](https://github.com/d0nghyun/d0nghyun.github.io/blob/main/WRITING.md)
+in the repo root is an agent-facing contract covering categories, voice,
+boundaries, and the publish process (the agent drafts; nothing ships
+without my approval). If you want to see how an agent-native blog is
+operated, that file is the actual mechanism, not a description of one.
