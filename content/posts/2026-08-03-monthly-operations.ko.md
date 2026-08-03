@@ -1,9 +1,9 @@
 ---
 title: "[2026-07] 운용 성과"
-date: 2026-08-03T10:00:00+09:00
+date: 2026-08-03T22:43:00+09:00
 categories: ["quant"]
 tags: ["monthly"]
-draft: true
+draft: false
 cover:
   image: "/figures/2026-07-monthly/nav-index.png"
   alt: "실계정 NAV 지수와 BTC·ETH, 그로스 노출"
