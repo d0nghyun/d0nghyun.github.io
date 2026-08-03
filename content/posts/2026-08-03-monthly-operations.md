@@ -96,8 +96,9 @@ real impact model behind it.
 
 ## Running it alone on a Mac mini
 
-I write the infrastructure, wire the data, and do the analysis, so when one of
-them quietly springs a leak there is nobody else to notice. One leak got
+All of it runs on one Mac mini M4 — 16GB, 1TB SSD. I write the infrastructure,
+wire the data, and do the analysis, so when one of them quietly springs a leak
+there is nobody else to notice. One leak got
 expensive this month. A single symbol's slow response was discarding whole
 collection cycles, it kept happening without my noticing, and a 15-hour gap and a
 4-hour freeze went by. The portfolio sat on old decisions the whole time.
