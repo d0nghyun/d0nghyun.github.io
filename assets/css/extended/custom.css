@@ -1,0 +1,146 @@
+/* Paper-and-mono house style. Overrides PaperMod without touching the theme. */
+
+:root {
+  --paper:  #f5f4ef;
+  --card:   #fbfaf6;
+  --ink:    #191813;
+  --ink-2:  #4a4840;
+  --muted:  #837f73;
+  --rule:   #ddd9cc;
+  --edge:   #c9c4b4;
+  --accent: #2c6b60;
+  --pos:    #1d6b3a;
+  --neg:    #a5382c;
+  --sans: system-ui, -apple-system, "Apple SD Gothic Neo", "Segoe UI", sans-serif;
+  --serif: "Iowan Old Style", "Palatino Linotype", Georgia, "Apple SD Gothic Neo", serif;
+  --mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+  --theme: var(--paper);
+  --entry: var(--card);
+  --primary: var(--ink);
+  --secondary: var(--ink-2);
+  --tertiary: var(--rule);
+  --content: var(--ink);
+  --border: var(--edge);
+}
+
+.dark {
+  --paper:  #14140f;
+  --card:   #1c1c16;
+  --ink:    #efeee5;
+  --ink-2:  #b6b3a6;
+  --muted:  #8c887b;
+  --rule:   #2d2c25;
+  --edge:   #3b3a31;
+  --accent: #6cbfae;
+  --pos:    #56b97a;
+  --neg:    #dd7b6d;
+
+  --theme: var(--paper);
+  --entry: var(--card);
+  --primary: var(--ink);
+  --secondary: var(--ink-2);
+  --tertiary: var(--rule);
+  --content: var(--ink);
+  --border: var(--edge);
+}
+
+body { font-family: var(--sans); }
+
+/* ---- masthead ---- */
+.header { border-bottom: 1px solid var(--rule); }
+#site-title, .logo a { font-family: var(--serif); font-weight: 600; letter-spacing: -0.01em; }
+#menu a { font-family: var(--mono); font-size: 0.82rem; letter-spacing: 0.02em; }
+
+/* ---- headings ---- */
+.post-title, .entry-header h2, h1, h2, h3 {
+  font-family: var(--serif);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+.post-content h2 {
+  border-top: 1px solid var(--rule);
+  padding-top: 1.1rem;
+  margin-top: 2.6rem;
+  font-size: 1.35rem;
+}
+.post-content h3 { font-size: 1.12rem; }
+
+/* ---- meta ---- */
+.post-meta, .entry-footer, .post-description, .archive-meta {
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  color: var(--muted);
+}
+.post-header { border-bottom: 2px solid var(--ink); padding-bottom: 1.2rem; }
+
+/* ---- body copy ---- */
+.post-content { line-height: 1.85; color: var(--ink); }
+.post-content p { margin-bottom: 1.15em; }
+.post-content a { text-decoration-color: var(--accent); text-underline-offset: 3px; }
+
+/* ---- figures: charts are light-ground PNGs, so keep a light plate in both themes ---- */
+.post-content figure { margin: 2rem 0; }
+.post-content figure img {
+  width: 100%;
+  height: auto;
+  background: #fcfcfb;
+  border: 1px solid var(--edge);
+  border-radius: 0;
+}
+.post-content figure figcaption {
+  font-family: var(--mono);
+  font-size: 0.71rem;
+  line-height: 1.7;
+  color: var(--muted);
+  text-align: left;
+  margin-top: 0.6rem;
+}
+
+/* ---- stat band (see layouts/shortcodes/stats.html) ---- */
+.statband {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+  gap: 1px;
+  background: var(--edge);
+  border: 1px solid var(--edge);
+  margin: 1.6rem 0 2.2rem;
+}
+.statband .stat { background: var(--card); padding: 13px 15px; }
+.statband .k {
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin-bottom: 5px;
+}
+.statband .v {
+  font-family: var(--mono);
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+.statband .v.pos { color: var(--pos); }
+.statband .v.neg { color: var(--neg); }
+.statband .n { font-size: 0.7rem; color: var(--muted); margin-top: 3px; }
+
+/* ---- tables, code, quotes ---- */
+.post-content table { font-variant-numeric: tabular-nums; font-size: 0.88rem; }
+.post-content th { font-family: var(--mono); font-weight: 500; font-size: 0.74rem; color: var(--muted); }
+.post-content code { font-family: var(--mono); }
+.post-content blockquote {
+  border-inline-start: 2px solid var(--accent);
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  color: var(--ink);
+}
+
+/* ---- list page ---- */
+.post-entry { background: var(--card); border: 1px solid var(--edge); border-radius: 0; }
+.post-entry:hover { border-color: var(--accent); }
+.first-entry { min-height: auto; }
+
+/* ---- footer ---- */
+.footer { font-family: var(--mono); font-size: 0.7rem; color: var(--muted); border-top: 1px solid var(--rule); }

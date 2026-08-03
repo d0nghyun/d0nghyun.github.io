@@ -1,0 +1,28 @@
+{{- /*
+  Stat band. Usage:
+    {{< stats
+        "수익률 22일=+11.7%|pos"
+        "최대낙폭=-3.0%|neg"
+        "연환산 변동성=27.4%"
+        "BTC 베타=-0.26|note:순노출 +0.3%" >}}
+  Each positional argument is  label=value  with optional |pos, |neg, |note:text
+*/ -}}
+<div class="statband">
+{{- range .Params }}
+  {{- $parts := split . "|" }}
+  {{- $kv := split (index $parts 0) "=" }}
+  {{- $tone := "" }}
+  {{- $note := "" }}
+  {{- range after 1 $parts }}
+    {{- if eq . "pos" }}{{ $tone = "pos" }}
+    {{- else if eq . "neg" }}{{ $tone = "neg" }}
+    {{- else if hasPrefix . "note:" }}{{ $note = strings.TrimPrefix "note:" . }}
+    {{- end }}
+  {{- end }}
+  <div class="stat">
+    <div class="k">{{ index $kv 0 }}</div>
+    <div class="v {{ $tone }}">{{ index $kv 1 }}</div>
+    {{- with $note }}<div class="n">{{ . }}</div>{{ end }}
+  </div>
+{{- end }}
+</div>

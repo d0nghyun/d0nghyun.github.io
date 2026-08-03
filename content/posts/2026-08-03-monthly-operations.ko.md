@@ -3,8 +3,16 @@ title: "[2026-07] 운용 성과"
 date: 2026-08-03T10:00:00+09:00
 categories: ["quant"]
 tags: ["trading", "monthly", "crypto", "agent"]
+description: "에이전트가 운영하는 크로스섹셔널 롱숏 스택의 첫 달. 성과, 이번 달에 고친 것들, 그리고 맥미니 한 대로 혼자 돌리며 배운 것."
 draft: true
+cover:
+  image: "/figures/2026-07-monthly/nav-index.png"
+  alt: "실계정 NAV 지수와 BTC·ETH, 그로스 노출"
+  relative: false
+  hiddenInSingle: true
 ---
+
+{{< stats "수익률 22일=+11.7%|pos" "최대낙폭=-3.0%|neg" "연환산 변동성=27.4%" "BTC 베타=-0.26|note:순노출 +0.3%" >}}
 
 7월 초부터 세팅했다. 이직하고 나서 회사 끝나고 퇴근하면 붙잡는
 식으로 만들었고, 7월 9일에 소규모로 실계정을 켰다. 이 글은 첫 달
