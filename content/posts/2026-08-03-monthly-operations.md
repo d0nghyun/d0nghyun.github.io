@@ -59,7 +59,10 @@ reason. If they are, running ten signals is effectively running one.
   caption="What each signal actually earned, and whether it came from the long or the short side. Covers July 16th onward, where fill records exist. Signal names are masked." >}}
 
 The ten signals did not contribute evenly. A few at the top made most of it and a
-few at the bottom took some back. Split by side, the long leg earned more.
+few at the bottom took some back. Split by side, the short leg earned more than
+twice what the long leg did. The market went sideways this month, so selling the
+expensive side worked — whether that is structural or just this month, one month
+cannot say.
 
 {{< figure src="/figures/2026-07-monthly/sleeve-decomposition.png"
   caption="Per-signal equity curves against the whole book. Not live results — this assumes the current composition was held all month, so it comes out better than reality." >}}
