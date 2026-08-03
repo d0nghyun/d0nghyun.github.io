@@ -85,8 +85,14 @@ not evidence of a problem.
 The problem is that those few names are mostly thinly traded. Orders fill away
 from the price you wanted — usually by about 0.02%, which is ignorable. But fills
 that slipped more than 0.6% are only 2.5% of the total and account for 17% of all
-the slippage. At this size I can absorb that; as capital grows this is what binds
-first. At what size, I cannot yet say.
+the slippage.
+
+I have a rough read on how far this scales. Sizing positions against each name's
+daily traded volume puts the ceiling orders of magnitude above where I am now,
+with the bottleneck being a handful of very thin names. And these signals do not
+decay quickly, so at larger size the orders can be spread over time rather than
+filled at once without losing much. That is a first-order estimate, though — no
+real impact model behind it.
 
 ## Running it alone on a Mac mini
 
@@ -172,6 +178,7 @@ ladder has never once fired.
 
 The rest is measurement. Fix the other half of the data-collection defect, build
 something that reconstructs what the book would have held during an outage, and
-start recording order size against how much each name actually trades. And the
+redo the capacity estimate with an actual impact model rather than a first-order
+one. And the
 nine swaps need to come down — none of them ran longer than four days, some only
 seven hours, which is not long enough to judge anything.
