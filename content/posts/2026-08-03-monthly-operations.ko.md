@@ -2,7 +2,7 @@
 title: "[2026-07] 운용 성과"
 date: 2026-08-03T10:00:00+09:00
 categories: ["quant"]
-tags: ["trading", "monthly", "crypto", "agent"]
+tags: ["monthly"]
 draft: true
 cover:
   image: "/figures/2026-07-monthly/nav-index.png"

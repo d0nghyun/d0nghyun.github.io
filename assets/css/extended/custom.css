@@ -170,3 +170,27 @@ body { font-family: var(--sans); }
 
 /* ---- footer ---- */
 .footer { font-family: var(--mono); font-size: 0.7rem; color: var(--muted); border-top: 1px solid var(--rule); }
+
+/* ---- categories directory (layouts/taxonomy.html) ---- */
+.cat-index { display: flex; flex-direction: column; gap: 2.4rem; margin-top: 1.4rem; }
+.cat-block { border-top: 1px solid var(--rule); padding-top: 1rem; }
+.cat-name {
+  font-family: var(--serif); font-size: 1.3rem; font-weight: 600;
+  margin: 0 0 .7rem; display: flex; align-items: baseline; gap: .5rem;
+}
+.cat-name a { color: var(--ink); text-decoration: none; }
+.cat-name a:hover { text-decoration: underline; text-decoration-color: var(--accent); }
+.cat-count { font-family: var(--mono); font-size: .7rem; color: var(--muted); font-weight: 500; }
+.cat-posts { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: .45rem; }
+.cat-posts li { display: flex; flex-direction: column; gap: .25rem; }
+.cat-post-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+.cat-tags { display: flex; flex-wrap: wrap; gap: .5rem; }
+.cat-tags a {
+  font-family: var(--mono); font-size: .68rem; color: var(--muted);
+  text-decoration: none; letter-spacing: .01em;
+}
+.cat-tags a:hover { color: var(--accent); }
+.cat-posts a { color: var(--ink); text-decoration: none; }
+.cat-posts a:hover { text-decoration: underline; text-decoration-color: var(--accent); }
+.cat-posts time { font-family: var(--mono); font-size: .72rem; color: var(--muted); flex: 0 0 auto; }
+.cat-more { font-family: var(--mono); font-size: .74rem; color: var(--accent); display: inline-block; margin-top: .6rem; }

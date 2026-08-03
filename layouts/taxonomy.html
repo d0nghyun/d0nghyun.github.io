@@ -1,0 +1,62 @@
+{{- define "main" }}
+
+{{- if .Title }}
+<header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{- with .Description }}<div class="post-description">{{ . }}</div>{{ end }}
+</header>
+{{- end }}
+
+{{- if eq .Type "categories" }}
+{{- /* Categories are the site's five fixed axes, so this page is a directory:
+       each axis with its posts, newest first — not a row of chips. */ -}}
+<div class="cat-index">
+  {{- range $key, $value := .Data.Terms.Alphabetical }}
+    {{- $name := .Name }}
+    {{- with site.GetPage (printf "/categories/%s" $name) }}
+    <section class="cat-block">
+      <h2 class="cat-name">
+        <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+        <span class="cat-count">{{ len .Pages }}</span>
+      </h2>
+      <ul class="cat-posts">
+        {{- range first 8 (.Pages.ByDate.Reverse) }}
+        <li>
+          <div class="cat-post-head">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+          </div>
+          {{- with .Params.tags }}
+          <div class="cat-tags">
+            {{- range . }}
+            <a href="{{ (printf "tags/%s/" (. | urlize)) | absLangURL }}">#{{ . }}</a>
+            {{- end }}
+          </div>
+          {{- end }}
+        </li>
+        {{- end }}
+      </ul>
+      {{- if gt (len .Pages) 8 }}
+      <a class="cat-more" href="{{ .Permalink }}">전체 {{ len .Pages }}편 →</a>
+      {{- end }}
+    </section>
+    {{- end }}
+  {{- end }}
+</div>
+
+{{- else }}
+<ul class="terms-tags">
+    {{- $type := .Type }}
+    {{- range $key, $value := .Data.Terms.Alphabetical }}
+        {{- $name := .Name }}
+        {{- $count := .Count }}
+        {{- with site.GetPage (printf "/%s/%s" $type $name) }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .LinkTitle }} <sup><strong><sup>{{ $count }}</sup></strong></sup> </a>
+        </li>
+        {{- end }}
+    {{- end }}
+</ul>
+{{- end }}
+
+{{- end }}{{/* end main */ -}}

@@ -2,7 +2,7 @@
 title: "[2026-07] 이직 회고 — 1. 결정"
 date: 2026-08-02T15:17:00+09:00
 categories: ["retro"]
-tags: ["career", "job-change"]
+tags: ["job-change"]
 draft: false
 ---
 
