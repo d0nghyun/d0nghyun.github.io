@@ -52,15 +52,21 @@ What may appear in a `quant` post about the live book:
 
 | | |
 |---|---|
-| Returns, drawdown, vol, Sharpe, ratios | **allowed** |
-| Dollar amounts — NAV, P&L, fees, position size | **never** |
-| Positions — tickers held, weights, counts by name | **masked** |
+| Returns, drawdown, vol, Sharpe, beta, ratios | **allowed** |
+| NAV as an **index** (start = 100), equity curves rebased | **allowed** |
+| Costs — fees, slippage, funding — as **% of NAV or of gross** | **allowed** |
+| Gross/net exposure as a multiple of equity | **allowed** |
+| Any **dollar figure** — NAV level, P&L, fee $, position size, AUM | **never** |
+| Positions — tickers held, per-name weights | **masked** |
 | Alpha logic — sleeve names, formulas, parameters | **masked** |
+
+The line is **size**, not performance. A percentage or an index says
+how well the thing works; a dollar says how much money is behind it,
+and that is nobody's business. So rebase every curve and divide every
+cost by NAV before it goes in a figure.
 
 Masked means the anonymised codes the source repo already emits
 (`A1…An` for sleeves, `B1…Bn` for books), not a vague paraphrase.
-Percentages are safe because they carry no capital and no signal;
-dollars leak size, and size is nobody's business.
 
 Nothing here is investment advice, and no post should read as a
 solicitation.
