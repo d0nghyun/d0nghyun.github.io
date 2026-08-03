@@ -24,7 +24,10 @@
   --border: var(--edge);
 }
 
-.dark {
+/* PaperMod stamps data-theme on <html>; older builds use a .dark class.
+   Cover both, plus the OS preference when the reader has not chosen. */
+:root[data-theme="dark"],
+html.dark {
   --paper:  #14140f;
   --card:   #1c1c16;
   --ink:    #efeee5;
@@ -43,6 +46,29 @@
   --tertiary: var(--rule);
   --content: var(--ink);
   --border: var(--edge);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:  #14140f;
+    --card:   #1c1c16;
+    --ink:    #efeee5;
+    --ink-2:  #b6b3a6;
+    --muted:  #8c887b;
+    --rule:   #2d2c25;
+    --edge:   #3b3a31;
+    --accent: #6cbfae;
+    --pos:    #56b97a;
+    --neg:    #dd7b6d;
+
+    --theme: var(--paper);
+    --entry: var(--card);
+    --primary: var(--ink);
+    --secondary: var(--ink-2);
+    --tertiary: var(--rule);
+    --content: var(--ink);
+    --border: var(--edge);
+  }
 }
 
 body { font-family: var(--sans); }
