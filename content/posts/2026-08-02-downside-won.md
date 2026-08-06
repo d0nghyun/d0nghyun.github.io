@@ -1,5 +1,5 @@
 ---
-title: "[2026-07] Job-change retrospective — The decision"
+title: "[2026-07] Job-change retrospective — 1. The decision"
 date: 2026-08-02T15:17:00+09:00
 categories: ["retro"]
 tags: ["job-change"]
