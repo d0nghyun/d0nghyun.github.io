@@ -1,5 +1,5 @@
 ---
-title: "[2026-07] Monthly operations"
+title: "[Monthly ops] 2026-07"
 date: 2026-08-03T22:43:00+09:00
 categories: ["quant"]
 tags: ["monthly"]

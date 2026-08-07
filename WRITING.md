@@ -14,6 +14,14 @@ the contract that makes the output consistent.
   kebab-case — even on Korean posts), `draft`.
 - `date` must not be in the future at deploy time — Hugo silently
   excludes future-dated posts. (Learned the hard way on day one.)
+- **Titles lead with the series in brackets**, then what distinguishes
+  this entry: `[운용 성과] 2026-07`, `[이직 회고] 2. 자산`. A date goes
+  in the title only where the date *is* the entry's identity — the
+  monthly report is the July report; the three job-change posts all
+  concern the same July, so a date there distinguishes nothing and the
+  list already shows the publish date. Numbered series keep their
+  numbers: they tell a first-time reader what to open first.
+  A one-off post takes no bracket at all.
 
 ## Languages
 
