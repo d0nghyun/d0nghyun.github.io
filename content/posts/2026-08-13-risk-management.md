@@ -84,6 +84,9 @@ still feel like luxuries to me.
 Alerts come through Discord, and the numbers I actually read are four: current
 drawdown, max drawdown, the high-water mark, and time under water.
 
+{{< figure src="/figures/2026-08-risk/alert-card.svg"
+  caption="The alert that arrives on every rebalance. Book size is masked; the highlighted parts are the four I actually read." >}}
+
 {{< figure src="/figures/2026-08-risk/four-metrics.svg"
   caption="All four live on one curve. The moment a new high prints, current drawdown and time under water reset to zero." >}}
 
@@ -96,9 +99,6 @@ Sharpe and Calmar I look at in backtests and research. Over a month or two of li
 data the error on a Sharpe is bigger than the number. Even in research I mostly look
 at the chart and go with it if it looks usable. The bar is loose: if there's an edge
 visible anywhere, I'll put it up.
-
-{{< figure src="/figures/2026-08-risk/alert-card.svg"
-  caption="The alert that arrives on every rebalance. Book size is masked; the highlighted parts are the four I actually read." >}}
 
 ## Why drawdown and not return
 
