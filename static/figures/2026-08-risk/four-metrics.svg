@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 230" width="520" role="img" aria-label="자산 곡선 위의 네 가지 지표"><style>text{font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Pretendard,sans-serif}</style>
+      <line x1="190" y1="58" x2="490" y2="58" stroke="#2478f0" stroke-dasharray="5 4" stroke-width="1.5"/>
+      <polyline points="30,150 70,128 105,138 150,88 190,58 235,92 275,118 310,138 355,112 405,118 460,92"
+        fill="none" stroke="#17191c" stroke-width="2"/>
+      <circle cx="190" cy="58" r="4" fill="#2478f0"/>
+      <text x="190" y="40" text-anchor="middle" font-size="12.5" font-weight="600" fill="#17191c">High-water mark</text>
+      <line x1="310" y1="62" x2="310" y2="134" stroke="#d02c20" stroke-width="1.5"/>
+      <polygon points="310,60 306,68 314,68" fill="#d02c20"/>
+      <polygon points="310,136 306,128 314,128" fill="#d02c20"/>
+      <text x="322" y="102" text-anchor="start" font-size="12.5" fill="#d02c20">Max drawdown</text>
+      <line x1="460" y1="62" x2="460" y2="88" stroke="#555e68" stroke-width="1.5"/>
+      <polygon points="460,60 456,68 464,68" fill="#555e68"/>
+      <polygon points="460,90 456,82 464,82" fill="#555e68"/>
+      <text x="448" y="78" text-anchor="end" font-size="12.5" fill="#555e68">Current drawdown</text>
+      <line x1="190" y1="168" x2="460" y2="168" stroke="#2478f0" stroke-width="1.5"/>
+      <line x1="190" y1="160" x2="190" y2="168" stroke="#2478f0" stroke-width="1.5"/>
+      <line x1="460" y1="160" x2="460" y2="168" stroke="#2478f0" stroke-width="1.5"/>
+      <text x="325" y="192" text-anchor="middle" font-size="12.5" fill="#2478f0">Time under water</text>
+    </svg>
