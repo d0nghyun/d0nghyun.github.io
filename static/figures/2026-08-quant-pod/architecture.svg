@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1620 940" role="img" aria-label="Systematic quant pod on a Mac mini: one pod, one mandate, three lanes — classical computing runs the money path, LLM agents research but cannot push anything live, I arm real money by hand.">
+  <style>
+    text { font-family: "SF Mono", SFMono-Regular, Menlo, Consolas, monospace; fill: #23272e; }
+    .pod { fill: #ffffff; stroke: #23272e; stroke-width: 1.8; }
+    .pod-ghost { fill: none; stroke: #a5a29a; stroke-width: 1.4; stroke-dasharray: 8 6; }
+    .lane { fill: #f1efe9; stroke: #cfccc3; }
+    .lane-llm { fill: #efedfb; stroke: #5b4fd4; stroke-dasharray: 8 6; }
+    .stripe-c { fill: #6d7480; }
+    .stripe-a { fill: #5b4fd4; }
+    .stripe-h { fill: #23272e; }
+    .d-main { fill: #ffffff; stroke: #23272e; stroke-width: 1.8; }
+    .d-box { fill: #ffffff; stroke: #b9b5ab; stroke-width: 1.2; }
+    .d-box-accent { fill: #ffffff; stroke: #5b4fd4; stroke-width: 1.6; }
+    .d-box-caution { fill: #ffffff; stroke: #b45309; stroke-width: 1.8; }
+    .d-group { fill: #ffffff; stroke: #6d7480; stroke-width: 1.2; }
+    .d-venue { fill: none; stroke: #23272e; stroke-width: 1.6; stroke-dasharray: 8 6; }
+    .t-pod { font-size: 15.5px; font-weight: 700; letter-spacing: 0.1em; }
+    .t-mandate { font-size: 15.5px; font-weight: 700; }
+    .t-mandate-pre { font-size: 14px; fill: #6d7480; font-weight: 400; }
+    .t-punch { font-size: 13.5px; font-weight: 700; fill: #23272e; }
+    .t-punch-a { font-size: 13.5px; font-weight: 700; fill: #5b4fd4; }
+    .t-punch-c { font-size: 13.5px; font-weight: 700; fill: #b45309; }
+    .t-lane { font-size: 16.5px; font-weight: 700; letter-spacing: 0.1em; }
+    .t-lane-a { font-size: 16.5px; font-weight: 700; letter-spacing: 0.1em; fill: #5b4fd4; }
+    .t-tag { font-size: 13px; fill: #6d7480; letter-spacing: 0.04em; }
+    .t-sub { font-size: 12px; fill: #6d7480; }
+    .t-title { font-size: 15px; font-weight: 600; }
+    .t-detail { font-size: 12px; fill: #6d7480; }
+    .t-arrow { font-size: 12px; fill: #6d7480; }
+    .t-arrow-a { font-size: 12px; fill: #5b4fd4; }
+    .t-arrow-c { font-size: 12px; fill: #b45309; }
+    .t-group { font-size: 12px; letter-spacing: 0.14em; font-weight: 700; }
+    .flow { stroke: #23272e; stroke-width: 2.2; fill: none; }
+    .flow-thin { stroke: #23272e; stroke-width: 1.4; fill: none; }
+    .flow-a { stroke: #5b4fd4; stroke-width: 2; fill: none; }
+    .flow-c { stroke: #b45309; stroke-width: 2.2; fill: none; }
+    .mk-fg { fill: #23272e; }
+    .mk-a { fill: #5b4fd4; }
+    .mk-c { fill: #b45309; }
+  </style>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" class="mk-fg"/>
+    </marker>
+    <marker id="arr-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" class="mk-a"/>
+    </marker>
+    <marker id="arr-c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" class="mk-c"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1620" height="940" fill="#ffffff"/>
+
+  <!-- ============ POD STACK ============ -->
+  <rect class="pod-ghost" x="224" y="36" width="1160" height="820" rx="14"/>
+  <rect class="pod-ghost" x="212" y="48" width="1160" height="820" rx="14"/>
+  <rect class="pod" x="200" y="60" width="1160" height="820" rx="14"/>
+
+  <text class="t-pod" x="232" y="90">POD №1</text>
+  <text class="t-mandate" x="1328" y="90" text-anchor="end"><tspan class="t-mandate-pre">the mandate: </tspan>crypto perps · cross-sectional L/S · hourly · market-neutral</text>
+
+  <!-- ============ LANE 1 : CLASSICAL COMPUTING ============ -->
+  <rect class="lane" x="216" y="110" width="1128" height="316" rx="12"/>
+  <rect class="stripe-c" x="216" y="110" width="6" height="316" rx="3"/>
+  <text class="t-lane" x="240" y="140">CLASSICAL COMPUTING</text>
+  <text class="t-tag" x="1320" y="140" text-anchor="end">deterministic · 24/7 · never creative</text>
+  <text class="t-sub" x="240" y="162">one small machine (a VM would do) · pm2 supervisor · 54 processes</text>
+
+  <!-- external sources -->
+  <rect class="d-venue" x="16" y="164" width="170" height="130" rx="10"/>
+  <text class="t-group" x="28" y="186">DATA SOURCES</text>
+  <rect class="d-main" x="28" y="196" width="146" height="52" rx="6"/>
+  <text class="t-title" x="101" y="217" text-anchor="middle">Binance</text>
+  <text class="t-detail" x="101" y="233" text-anchor="middle">+ ...etc</text>
+  <line class="flow" x1="186" y1="226" x2="226" y2="226" marker-end="url(#arr)"/>
+
+  <!-- main flow -->
+  <rect class="d-main" x="232" y="190" width="140" height="72" rx="8"/>
+  <text class="t-title" x="302" y="214" text-anchor="middle">collectors ×16</text>
+  <text class="t-detail" x="302" y="233" text-anchor="middle">pull · backfill</text>
+  <text class="t-detail" x="302" y="247" text-anchor="middle">24/7</text>
+  <line class="flow" x1="372" y1="226" x2="394" y2="226" marker-end="url(#arr)"/>
+
+  <rect class="d-box" x="400" y="174" width="230" height="144" rx="8"/>
+  <text class="t-title" x="515" y="196" text-anchor="middle">local object storage</text>
+  <rect class="d-box" x="412" y="206" width="206" height="42" rx="5"/>
+  <text class="t-title" x="515" y="224" text-anchor="middle">market data</text>
+  <text class="t-detail" x="515" y="240" text-anchor="middle">11 kinds, back to 2023</text>
+  <rect class="d-box-accent" x="412" y="256" width="206" height="54" rx="5"/>
+  <text class="t-title" x="515" y="277" text-anchor="middle">research journal</text>
+  <text class="t-detail" x="515" y="294" text-anchor="middle">551 verdicts · kills kept</text>
+
+  <line class="flow-thin" x1="630" y1="226" x2="664" y2="226" marker-end="url(#arr)"/>
+  <text class="t-arrow" x="649" y="216" text-anchor="middle">bars</text>
+
+  <rect class="d-main" x="670" y="190" width="140" height="72" rx="8"/>
+  <text class="t-title" x="740" y="218" text-anchor="middle">strategies ×19</text>
+  <text class="t-punch" x="740" y="240" text-anchor="middle">backtest = live</text>
+  <line class="flow" x1="810" y1="226" x2="832" y2="226" marker-end="url(#arr)"/>
+
+  <rect class="d-main" x="838" y="190" width="150" height="72" rx="8"/>
+  <text class="t-title" x="913" y="214" text-anchor="middle">allocation</text>
+  <text class="t-detail" x="913" y="233" text-anchor="middle">blends 19 strategies</text>
+  <text class="t-detail" x="913" y="247" text-anchor="middle">into one book</text>
+  <line class="flow" x1="988" y1="226" x2="1010" y2="226" marker-end="url(#arr)"/>
+
+  <rect class="d-box-caution" x="1016" y="190" width="140" height="72" rx="8"/>
+  <text class="t-title" x="1086" y="211" text-anchor="middle">risk overlay</text>
+  <text class="t-detail" x="1086" y="229" text-anchor="middle">−10% halve</text>
+  <text class="t-detail" x="1086" y="242" text-anchor="middle">−15% flatten</text>
+  <text class="t-detail" x="1086" y="255" text-anchor="middle">fast fall ⇒ stop</text>
+  <line class="flow" x1="1156" y1="226" x2="1178" y2="226" marker-end="url(#arr)"/>
+
+  <rect class="d-box-caution" x="1184" y="190" width="136" height="72" rx="8"/>
+  <text class="t-title" x="1252" y="212" text-anchor="middle">order manager</text>
+  <text class="t-detail" x="1252" y="231" text-anchor="middle">real money</text>
+  <text class="t-detail" x="1252" y="246" text-anchor="middle">reconciles</text>
+
+  <!-- venue, orders out + fills back -->
+  <rect class="d-venue" x="1400" y="174" width="170" height="120" rx="10"/>
+  <text class="t-group" x="1412" y="196">VENUE</text>
+  <rect class="d-main" x="1412" y="206" width="146" height="52" rx="6"/>
+  <text class="t-title" x="1485" y="227" text-anchor="middle">Binance USDT-M</text>
+  <text class="t-detail" x="1485" y="243" text-anchor="middle">perp futures</text>
+  <path class="flow-c" d="M 1320 210 L 1394 210" marker-end="url(#arr-c)"/>
+  <text class="t-arrow-c" x="1357" y="201" text-anchor="middle">orders</text>
+  <path class="flow-thin" d="M 1394 236 L 1326 236" marker-end="url(#arr)"/>
+  <text class="t-arrow" x="1357" y="250" text-anchor="middle">fills</text>
+
+  <!-- REGISTRY -->
+  <rect class="d-group" x="496" y="326" width="420" height="92" rx="8"/>
+  <text class="t-group" x="512" y="346">REGISTRY</text>
+  <rect class="d-box" x="512" y="356" width="180" height="56" rx="6"/>
+  <text class="t-title" x="602" y="374" text-anchor="middle">validation</text>
+  <text class="t-detail" x="602" y="390" text-anchor="middle">re-runs every number</text>
+  <text class="t-detail" x="602" y="404" text-anchor="middle">recent data can't vote</text>
+  <rect class="d-box" x="716" y="356" width="180" height="56" rx="6"/>
+  <text class="t-title" x="806" y="372" text-anchor="middle">registered</text>
+  <text class="t-detail" x="806" y="388" text-anchor="middle">live-ready, standalone</text>
+  <text class="t-detail" x="806" y="402" text-anchor="middle">evidence frozen forever</text>
+  <line class="flow-thin" x1="692" y1="384" x2="710" y2="384" marker-end="url(#arr)"/>
+  <line class="flow-thin" x1="602" y1="318" x2="602" y2="350" marker-end="url(#arr)"/>
+  <text class="t-arrow" x="614" y="338">evidence</text>
+  <line class="flow-thin" x1="780" y1="356" x2="780" y2="268" marker-end="url(#arr)"/>
+  <text class="t-arrow" x="790" y="316">what to run</text>
+
+  <!-- monitoring -->
+  <rect class="d-box" x="1126" y="320" width="180" height="70" rx="8"/>
+  <text class="t-title" x="1216" y="342" text-anchor="middle">monitoring</text>
+  <text class="t-detail" x="1216" y="359" text-anchor="middle">watchdog · dashboard</text>
+  <text class="t-detail" x="1216" y="373" text-anchor="middle">Discord → phone</text>
+  <line class="flow-thin" x1="1252" y1="262" x2="1252" y2="314" marker-end="url(#arr)"/>
+
+  <!-- ============ LANE 2 : LLM AGENTS (external brain, dashed) ============ -->
+  <rect class="lane-llm" x="216" y="450" width="920" height="180" rx="12"/>
+  <rect class="stripe-a" x="216" y="450" width="6" height="180" rx="3"/>
+  <text class="t-lane-a" x="240" y="480">LLM AGENTS</text>
+  <text class="t-tag" x="1116" y="480" text-anchor="end">creative · tireless · often wrong</text>
+  <text class="t-sub" x="240" y="502">Claude Code sessions — an external brain · anything it claims, the lane above re-computes</text>
+
+  <rect class="d-box-accent" x="266" y="530" width="250" height="72" rx="8"/>
+  <text class="t-title" x="391" y="560" text-anchor="middle">generates ideas</text>
+  <text class="t-detail" x="391" y="580" text-anchor="middle">what predicts tomorrow's return?</text>
+  <rect class="d-box-accent" x="566" y="530" width="250" height="72" rx="8"/>
+  <text class="t-title" x="691" y="554" text-anchor="middle">tests them</text>
+  <text class="t-detail" x="691" y="572" text-anchor="middle">event study → backtest</text>
+  <text class="t-detail" x="691" y="588" text-anchor="middle">always net of fees</text>
+  <rect class="d-box-accent" x="866" y="530" width="250" height="72" rx="8"/>
+  <text class="t-title" x="991" y="554" text-anchor="middle">records &amp; proposes</text>
+  <text class="t-detail" x="991" y="572" text-anchor="middle">kill or candidate — no deletes</text>
+  <text class="t-punch-a" x="991" y="590" text-anchor="middle">cannot push anything live</text>
+
+  <line class="flow-a" x1="516" y1="566" x2="560" y2="566" marker-end="url(#arr-a)"/>
+  <line class="flow-a" x1="816" y1="566" x2="860" y2="566" marker-end="url(#arr-a)"/>
+
+  <!-- LLM <-> storage -->
+  <line class="flow-a" x1="436" y1="318" x2="436" y2="444" marker-end="url(#arr-a)"/>
+  <line class="flow-a" x1="476" y1="444" x2="476" y2="324" marker-end="url(#arr-a)"/>
+  <text class="t-arrow-a" x="428" y="441" text-anchor="end">reads · writes</text>
+
+  <!-- LLM -> validation -->
+  <path class="flow-a" d="M 991 530 L 991 438 L 602 438 L 602 417" marker-end="url(#arr-a)"/>
+  <text class="t-arrow-a" x="800" y="430" text-anchor="middle">proposes</text>
+
+  <!-- monitoring -> human -->
+  <line class="flow-thin" x1="1150" y1="390" x2="1150" y2="734" marker-end="url(#arr)"/>
+  <text class="t-arrow" x="1162" y="726">alerts</text>
+
+  <!-- ============ LANE 3 : HUMAN ============ -->
+  <rect class="lane" x="216" y="680" width="1128" height="180" rx="12"/>
+  <rect class="stripe-h" x="216" y="680" width="6" height="180" rx="3"/>
+  <text class="t-lane" x="240" y="710">ME (HUMAN)</text>
+  <text class="t-tag" x="1320" y="710" text-anchor="end">slow · judging · owns the risk</text>
+
+  <rect class="d-box" x="266" y="740" width="280" height="72" rx="8"/>
+  <text class="t-title" x="406" y="770" text-anchor="middle">sets the tolerance</text>
+  <text class="t-detail" x="406" y="790" text-anchor="middle">−15% is mine, not the model's</text>
+  <rect class="d-box" x="636" y="740" width="280" height="72" rx="8"/>
+  <text class="t-title" x="776" y="770" text-anchor="middle">rules on kills · resets brakes</text>
+  <text class="t-detail" x="776" y="790" text-anchor="middle">pushback = re-measure · no auto re-arm</text>
+  <rect class="d-box-caution" x="1056" y="740" width="280" height="72" rx="8"/>
+  <text class="t-title" x="1196" y="768" text-anchor="middle">arms real money</text>
+  <text class="t-punch-c" x="1196" y="790" text-anchor="middle">by hand, never automated</text>
+
+  <!-- human -> order manager (the arm wire) -->
+  <path class="flow-c" d="M 1332 740 L 1332 280 L 1300 280 L 1300 268" marker-end="url(#arr-c)"/>
+  <text class="t-arrow-c" x="1324" y="732" text-anchor="end">arm · halt</text>
+
+  <!-- human <-> LLM -->
+  <line class="flow-a" x1="326" y1="630" x2="326" y2="674" marker-end="url(#arr-a)"/>
+  <text class="t-arrow-a" x="316" y="658" text-anchor="end">reports · asks</text>
+  <line class="flow-a" x1="386" y1="680" x2="386" y2="636" marker-end="url(#arr-a)"/>
+  <text class="t-arrow-a" x="396" y="658">prompts · rulings</text>
+
+  <!-- legend -->
+  <line class="flow-a" x1="232" y1="916" x2="262" y2="916"/>
+  <text class="t-detail" x="269" y="920">LLM handoffs</text>
+  <line class="flow-c" x1="392" y1="916" x2="422" y2="916"/>
+  <text class="t-detail" x="429" y="920">real money</text>
+  <line class="d-venue" x1="552" y1="916" x2="582" y2="916"/>
+  <text class="t-detail" x="589" y="920">grows later</text>
+</svg>
